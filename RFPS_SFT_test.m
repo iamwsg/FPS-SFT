@@ -56,8 +56,6 @@ Win = win0*win1.';
 % delta = 0.001;
 % [I,hA,P] = DL_SFT_Phase_Reduction(Sig, N0,N1 ,epsilon, gamma, delta);
 
-time = toc;
-
 [Omega, ind] = sortrows(Omega);
 hA = hA(ind);
 
