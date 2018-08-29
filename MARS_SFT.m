@@ -1,5 +1,5 @@
-function [Omega,A,P] = RFPS_SFT(Sig,Win,N0,N1,T ,epsilon, gamma, n_d, n_s)
-% (R)FPS_SFT algorithm; for FPS_SFT, set Win as rect window, epsilon =
+function [Omega,A,P] = MARS_SFT(Sig,Win,N0,N1,T ,epsilon, gamma, n_d, n_s)
+% Robutst MARS_SFT algorithm; for FPS_SFT, set Win as rect window, epsilon =
 % gamma = 1e-10; n_d = n_s = 1
 %
 % Copyright (c) 2018 Shaogang Wang

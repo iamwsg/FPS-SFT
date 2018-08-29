@@ -1,4 +1,4 @@
-%% Test of (R)FPS-SFT
+%% Test of Robust MARS-SFT
 %
 % Copyright (c) 2018 Shaogang Wang
 %
@@ -51,7 +51,7 @@ win0 = ones(N0,1);
 win1 = ones(N1,1);
 Win = win0*win1.';
 
-[Omega, hA, P] = RFPS_SFT(Sig, Win, N0, N1, T, epsilon, gamma, n_s, n_d);
+[Omega, hA, P] = MARS_SFT(Sig, Win, N0, N1, T, epsilon, gamma, n_s, n_d);
 
 % delta = 0.001;
 % [I,hA,P] = DL_SFT_Phase_Reduction(Sig, N0,N1 ,epsilon, gamma, delta);
