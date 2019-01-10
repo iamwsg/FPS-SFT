@@ -53,12 +53,9 @@ Win = win0*win1.';
 
 [Omega, hA, P] = MARS_SFT(Sig, Win, N0, N1, T, epsilon, gamma, n_s, n_d);
 
-% delta = 0.001;
-% [I,hA,P] = DL_SFT_Phase_Reduction(Sig, N0,N1 ,epsilon, gamma, delta);
-
+%% Visualize the groud tuth and reconstructed results 
 [Omega, ind] = sortrows(Omega);
 hA = hA(ind);
-
 Omega_gt = round(Omega_gt);
 visual_localization(N0,N1,Omega_gt,Omega);
 
